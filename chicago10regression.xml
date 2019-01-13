@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke tests" verbose="6">
+
+
+
+    <test name="regression test">
+        <packages>
+            <package name=".*"/>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke tests" verbose="6">
+
+
+
+    <test name="smoke tests">
+
+        <packages>
+            <package name="pageObjectModel"/>
+            <package name="TestNG"/>
+
+
+        </packages>
+
+        <classes>
+            <class name="recap.AmazonMenu">
+                <methods>
+                    <exclude name="amazonTitle"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+
+
+
+
+</suite>

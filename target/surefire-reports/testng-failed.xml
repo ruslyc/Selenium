@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Smoke tests]">
+  <test thread-count="5" verbose="0" name="smoke tests(failed)">
+    <classes>
+      <class name="pageObjectModel.OrangeTest">
+        <methods>
+          <include name="negativeLogin"/>
+        </methods>
+      </class> <!-- pageObjectModel.OrangeTest -->
+      <class name="TestNG.Iframe">
+        <methods>
+          <include name="iFrame"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestNG.Iframe -->
+      <class name="pageObjectModel.OrangeAdmin">
+        <methods>
+          <include name="negativeLogin"/>
+          <include name="loginVerification"/>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="jobTitleVerification"/>
+          <include name="cleaning"/>
+        </methods>
+      </class> <!-- pageObjectModel.OrangeAdmin -->
+    </classes>
+  </test> <!-- smoke tests(failed) -->
+</suite> <!-- Failed suite [Smoke tests] -->
